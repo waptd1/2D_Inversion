@@ -7,29 +7,30 @@ Abdullah Talib, Jyant Kumar
 
 Associated codes:
 
-1. dispersioncode.m - This code generates the dispersion image for a given experimental signal data acquired in field. It also contains code to extract predominant mode. 
+1. dispersioncode.m - This code generates the dispersion image for a given experimental signal data acquired in the field. It also contains code to extract the predominant mode. 
 
-2#. inversion_ga.m - This code contains the code to carry out the inversion for central profile using genetic algorithm. NOTE: lower and upper bound vector and Vs profile vector contains velocity values for all layers including half-space and then layers' thickness excluding half-space. 
+2#. inversion_ga.m - This code carries out the inversion for the central profile using the genetic algorithm. NOTE: lower and upper bound vectors and Vs profile vector contain velocity values for all layers, including half-space, and then layers' thickness excluding half-space. 
 
-3. inversion_sa.m - This code contains the code to carry out the inversion for side profile using simulated annealing.
+3. inversion_sa.m - This code carries out the inversion for the side profile(s) using simulated annealing.
 
-4*. Inversion_CFEM.m - This code is called through inversion_ga.m and inversion_sa.m, and it calculates the theoretical multiple modes and  predominant mode. NOTE: The observed/experimental predominant mode, acquisition parameters, Poisson's ratio, and density vector has to be updated within the code before running the inversion_ga or inversion_sa.
+4*. Inversion_CFEM.m - This code is called through inversion_ga.m and inversion_sa.m, and it calculates the theoretical multiple modes and  predominant mode. NOTE: The observed/experimental predominant mode, acquisition parameters, Poisson's ratio, and density vector have to be updated within the code before running the inversion_ga or inversion_sa.
 
 5. Misfit.m - This function is called within the Inversion_CFEM.m to calculate the misfit error (E) between the experimental and theoretical predominant mode. 
 
-6. gaoutfun.m - This code produces all the profiles calculated during each generation during inversion via genetic algorithm (inversion_ga.m).
+6. gaoutfun.m - This code saves all the profiles calculated during each generation during inversion via genetic algorithm (inversion_ga.m).
 
-7. profile.m - This code is used to generate plot of obtained Vs profile.
+7. profile.m - This code is used to generate a plot of the obtained Vs profile.
 
-8. Vs_2D.m - This code is used to generate a plot of 2D inverted profile (subsurface image).
+8. Vs_2D.m - This code is used to generate a plot of a 2D inverted profile (subsurface image).
 
 9. fwd_vert_disp.m - This code is used to generate a plot of maximum vertical downward displacement for experimental and synthetic (dynamic FE simulated) data. 
 
 
 
-Note: Please keep all the code files in the same folder. Relevant comments and instructions have been provided within the code and must be followed for smooth and error-free run.
+Note: Please keep all the code files in the same folder. Relevant comments and instructions have been provided within the code and must be followed for a smooth and error-free run.
 
 * Inversion_CFEM.m code is an open-source code and has been taken from the link http://www.vaziri.info/wavedisp/
 
-# The excel file (test data) contains signal data from experiment and synthetic simualtion. It also contains inverted Vs profile, and also 2D Vs profile for one given site. Signal data has columns for each geophone with fs=1000 Hz and time increasing downwards. Time vector can be calculated as dt=1/fs; td=sz(1)*dt; t=(0:dt:td-dt)'; where fs is acquistion frequency.
+# The Excel file (test data) contains signal data from the experiment and the synthetic simulation. It also contains an inverted Vs profile and the 2D Vs profile for one given site. Signal data has columns for each geophone with fs=1000 Hz and time increasing downwards. Time vector can be calculated as dt=1/fs; td=sz(1)*dt; t=(0:dt:td-dt)'; where fs is acquistion frequency.
+
 
