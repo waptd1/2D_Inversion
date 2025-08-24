@@ -1,7 +1,7 @@
 # 2D_Inversion
 Title of the manuscript:
 
-Surface wave based two-dimensional ground exploration by using fixed array and fixed source configuration
+Surface wave based two-dimensional ground exploration by using a fixed array and fixed source configuration
 
 Authors:
 Abdullah Talib, Jyant Kumar
