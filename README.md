@@ -1,2 +1,9 @@
 # 2D_Inversion
-This repository contains codes related to 2D inversion of MASW data.
+Title of the manuscript:
+
+Surface wave based two-dimensional ground exploration by using fixed array and fixed source configuration
+
+Authors:
+Abdullah Talib, Jyant Kumar
+
+Indian Institute of Science
