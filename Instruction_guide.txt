@@ -31,4 +31,5 @@ Note: Please keep all the code files in the same folder. Relevant comments and i
 
 * Inversion_CFEM.m code is an open-source code and has been taken from the link http://www.vaziri.info/wavedisp/
 
-# The excel file contains signal data from experiment and synthetic simualtion. It also contains inverted Vs profile, and also 2D Vs profile for one given site. Signal data has columns for each geophone with fs=1000 Hz and time increasing downwards. Time vector can be calculated as dt=1/fs; td=sz(1)*dt; t=(0:dt:td-dt)'; where fs is acquistion frequency.
+# The excel file (test data) contains signal data from experiment and synthetic simualtion. It also contains inverted Vs profile, and also 2D Vs profile for one given site. Signal data has columns for each geophone with fs=1000 Hz and time increasing downwards. Time vector can be calculated as dt=1/fs; td=sz(1)*dt; t=(0:dt:td-dt)'; where fs is acquistion frequency.
+
