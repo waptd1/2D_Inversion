@@ -37,7 +37,7 @@ nu=ones(1,n+1)*0.3;
 
 
 % Provide layer density vector (kg/m^3)
-rho=[1700 1700 1750 1750 1800 1800 1850 1850 1900 1950]; 
+rho=[1850 1900 1950 1950 1950 1950 1950]; 
 
 Pr.r0=  5;     % Set Source offset to nearest geophone
 Pr.dr=  1;    % Set Receiver interval
